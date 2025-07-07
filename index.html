@@ -3,56 +3,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunil Kumar Patel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; scroll-behavior: smooth; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background: #f5f7fa; color: #222; }
     header {
-      background-color: #222;
+      background: linear-gradient(to right, #2b5876, #4e4376);
       color: white;
-      padding: 100px 20px;
       text-align: center;
+      padding: 80px 20px 60px;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+      color: #ddd;
     }
     nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background: #000;
-      color: white;
+      background: #1c1c2b;
+      display: flex;
+      justify-content: center;
       padding: 10px 0;
-      text-align: center;
-      z-index: 1000;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
     }
     nav a:hover {
       text-decoration: underline;
     }
     section {
-      padding: 80px 20px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding: 60px 20px;
     }
     h2 {
-      color: #007acc;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2b5876;
     }
-    .skills div {
-      background: #f0f0f0;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 4px;
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
-    .project {
-      background: #e9f0fb;
-      padding: 15px;
-      margin: 10px 0;
-      border-radius: 5px;
+    .skills div, .projects div {
+      background: #e0e4ec;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
-      background: #222;
+      background: #2b5876;
       color: white;
       text-align: center;
       padding: 30px;
@@ -62,53 +77,51 @@
 <body>
 
 <nav>
-  <a href="#home">Home</a>
   <a href="#about">About</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<header id="home">
-  <h1>Your Name</h1>
-  <p>Content Writer | Blogger | SEO Enthusiast</p>
+<header>
+  <img src="https://i.imgur.com/4M34hi2.png" alt="Sunil Kumar Patel">
+  <h1>Sunil Kumar Patel</h1>
+  <p>I'm a passionate content writer and digital creator.</p>
 </header>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Hello! I'm a passionate content writer with experience in creating engaging and SEO-optimized articles. I love writing in Hindi and English for blogs, news, and digital platforms.</p>
+  <p>Hello! I'm Sunil Kumar Patel, a content writer with a love for technology, blogging, and government schemes. I write blogs in Hindi and English on trending topics and news. I enjoy transforming ideas into written form to educate and inform audiences.</p>
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
-  <div class="skills">
-    <div>✍️ Content Writing</div>
-    <div>🔍 SEO Optimization</div>
-    <div>🖥️ Blogger & WordPress</div>
-    <div>🖌️ Canva Designing</div>
-  </div>
+  <div>✍️ Content Writing</div>
+  <div>🔍 SEO Optimization</div>
+  <div>📱 Blogging (Blogger & WordPress)</div>
+  <div>🎨 Canva Designing</div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-  <div class="project">
-    <h3>Hindi Blog - Sarkari Yojana</h3>
-    <p>Wrote over 100+ government scheme articles in Hindi targeting rural audiences.</p>
+  <div>
+    <strong>📘 Sarkari Yojana Blog</strong>
+    <p>Explaining government schemes in simple Hindi to help rural readers understand benefits and processes.</p>
   </div>
-  <div class="project">
-    <h3>AI News Writer</h3>
-    <p>Created content around trending AI tools and updates for a digital news platform.</p>
+  <div>
+    <strong>📰 Tech AI News</strong>
+    <p>Daily blog on AI tools, technology, and digital news updates.</p>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: yourname@example.com</p>
-  <p>LinkedIn: linkedin.com/in/yourname</p>
+  <h2>Contact</h2>
+  <p>Email: sunil@example.com</p>
+  <p>LinkedIn: linkedin.com/in/sunilpatel</p>
 </section>
 
 <footer>
-  <p>© 2025 Your Name. All rights reserved.</p>
+  <p>© 2025 Sunil Kumar Patel. All rights reserved.</p>
 </footer>
 
 </body>
