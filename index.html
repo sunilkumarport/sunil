@@ -2,124 +2,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunil Kumar Patel | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background: #f9f9f9; color: #222; }
-    header {
-      background: linear-gradient(to right, #2b5876, #4e4376);
-      color: white;
-      text-align: center;
-      padding: 80px 20px 60px;
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4 url('https://www.transparenttextures.com/patterns/symphony.png');
     }
-    header img {
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+    }
+    .sidebar {
+      background-color: #2a8d9c;
+      color: white;
+      padding: 40px 20px;
+      width: 300px;
+      text-align: center;
+    }
+    .sidebar img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 3px solid white;
+      border: 4px solid white;
+    }
+    .sidebar h1 {
+      font-size: 28px;
+      margin: 20px 0 5px;
+    }
+    .sidebar p {
+      font-size: 16px;
       margin-bottom: 20px;
     }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-      color: #e0e0e0;
-      max-width: 700px;
-      margin: auto;
-    }
-    nav {
-      background: #1c1c2b;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-    }
-    nav a {
+    .sidebar a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
+      display: block;
+      margin: 8px 0;
+      font-size: 14px;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
+    .content {
+      padding: 40px;
+      flex: 1;
     }
     h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      color: #2b5876;
+      color: #2a8d9c;
+      margin-bottom: 10px;
     }
-    .skills, .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .skills div, .projects div {
-      background: #e0e4ec;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #2b5876;
-      color: white;
-      text-align: center;
-      padding: 30px;
+    .section {
+      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<header>
-  <img src="sunil.png" alt="Sunil Kumar Patel">
-  <h1>Sunil Kumar Patel</h1>
-  <p>Sunil Kumar Patel is a passionate digital creator working in the fields of affiliate marketing, content writing, and video editing. With experience managing social media platforms, he creates engaging content that connects with audiences and drives results. Always eager to learn and grow in the digital world.</p>
-</header>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div>📢 Affiliate Marketing</div>
-  <div>✍️ Content Writing</div>
-  <div>🎬 Video Editing</div>
-  <div>📱 Social Media Management</div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div>
-    <strong>📘 Government Scheme Blog</strong>
-    <p>Providing simplified information on Indian government schemes in Hindi.</p>
+  <div class="container">
+    <div class="sidebar">
+      <img src="sunil.png" alt="Sunil Kumar Patel">
+      <h1>Sunil Kumar Patel</h1>
+      <p>Digital Creator</p>
+      <a href="mailto:sunil@example.com">📧 sunil@example.com</a>
+      <a href="#">🐦 @sunilpatel</a>
+      <a href="#">🌐 github.com/sunilpatel</a>
+    </div>
+    <div class="content">
+      <div class="section">
+        <h2>CAREER OBJECTIVE</h2>
+        <p>In an organization seek challenging where my knowledge is growing up and give my best in organization.</p>
+      </div>
+      <div class="section">
+        <h2>RESEARCH TOPICS</h2>
+        <p>This amazing creator, Sunil Patel, is working upon some digital content and marketing research listed below.</p>
+        <p><strong>A Text to Video Optimization Strategy</strong> – This concept will help convert text data to content-ready scripts for short videos or reels.</p>
+        <p><strong>Audience Matching Algorithm</strong> – This logic helps identify best-matching audience for social content via keyword + interest targeting.</p>
+      </div>
+    </div>
   </div>
-  <div>
-    <strong>📹 YouTube Shorts & Reels</strong>
-    <p>Creating engaging short-form video content for digital platforms.</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: sunil@example.com</p>
-  <p>LinkedIn: linkedin.com/in/sunilpatel</p>
-</section>
-
-<footer>
-  <p>© 2025 Sunil Kumar Patel. All rights reserved.</p>
-</footer>
-
 </body>
 </html>
