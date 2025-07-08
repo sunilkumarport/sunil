@@ -8,79 +8,113 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4 url('https://www.transparenttextures.com/patterns/symphony.png');
-    }
-    .container {
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9 url('https://www.transparenttextures.com/patterns/symphony.png');
       display: flex;
-      max-width: 1200px;
-      margin: 0 auto;
-      background: white;
     }
-    .sidebar {
-      background-color: #2a8d9c;
-      color: white;
-      padding: 40px 20px;
+    .left {
       width: 300px;
-      text-align: center;
+      background: #2a8d9c;
+      color: white;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .sidebar img {
-      width: 150px;
-      height: 150px;
+    .left img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       border: 4px solid white;
-    }
-    .sidebar h1 {
-      font-size: 28px;
-      margin: 20px 0 5px;
-    }
-    .sidebar p {
-      font-size: 16px;
       margin-bottom: 20px;
     }
-    .sidebar a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      margin: 8px 0;
-      font-size: 14px;
+    .left h1 {
+      font-size: 22px;
+      margin: 10px 0 0;
     }
-    .content {
-      padding: 40px;
+    .left p.role {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    .left a {
+      color: white;
+      font-size: 14px;
+      margin: 5px 0;
+      text-decoration: none;
+    }
+    .left .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .right {
       flex: 1;
+      background: white;
+      padding: 40px;
     }
     h2 {
       color: #2a8d9c;
+      font-size: 20px;
       margin-bottom: 10px;
     }
     .section {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+    .skill-bar {
+      background: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 5px 0 15px;
+    }
+    .skill-bar-fill {
+      background: #2a8d9c;
+      height: 10px;
+      width: 75%;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <img src="sunil.png" alt="Sunil Kumar Patel">
-      <h1>Sunil Kumar Patel</h1>
-      <p>Digital Creator</p>
-      <a href="mailto:sunil@example.com">📧 sunil@example.com</a>
-      <a href="#">🐦 @sunilpatel</a>
-      <a href="#">🌐 github.com/sunilpatel</a>
+  <div class="left">
+    <img src="sunil.png" alt="Sunil Kumar Patel">
+    <h1>Sunil Kumar Patel</h1>
+    <p class="role">Full Stack Creator</p>
+    <a href="#">📧 sunil@example.com</a>
+    <a href="#">🐦 @sunilpatel</a>
+    <a href="#">💻 github.com/sunilpatel</a>
+    <div class="section-title">EDUCATION</div>
+    <p>B.A. in Media & Communication<br>2020 – 2023</p>
+    <p>Diploma in Editing<br>2017 – 2019</p>
+    <div class="section-title">LANGUAGES</div>
+    <p>Hindi<br>English<br>Bhojpuri</p>
+  </div>
+  <div class="right">
+    <div class="section">
+      <h2>CAREER OBJECTIVE</h2>
+      <p>In an organization seek challenging where my knowledge is growing up and give my best in organization.</p>
     </div>
-    <div class="content">
-      <div class="section">
-        <h2>CAREER OBJECTIVE</h2>
-        <p>In an organization seek challenging where my knowledge is growing up and give my best in organization.</p>
-      </div>
-      <div class="section">
-        <h2>RESEARCH TOPICS</h2>
-        <p>This amazing creator, Sunil Patel, is working upon some digital content and marketing research listed below.</p>
-        <p><strong>A Text to Video Optimization Strategy</strong> – This concept will help convert text data to content-ready scripts for short videos or reels.</p>
-        <p><strong>Audience Matching Algorithm</strong> – This logic helps identify best-matching audience for social content via keyword + interest targeting.</p>
-      </div>
+    <div class="section">
+      <h2>RESEARCH TOPICS</h2>
+      <p>This amazing creator, Sunil Patel, is working upon some digital content and marketing research listed below.</p>
+      <p><strong>A Text to Video Optimization Strategy</strong> – This concept will help convert text data to content-ready scripts for short videos or reels.</p>
+      <p><strong>Audience Matching Algorithm</strong> – This logic helps identify best-matching audience for social content via keyword + interest targeting.</p>
+    </div>
+    <div class="section">
+      <h2>PROJECTS</h2>
+      <p><strong>Short Video Creator</strong> – Tool to auto-generate short YouTube videos from blog content.</p>
+      <p><strong>Blog Automation</strong> – Scheduled posting system for Blogger + auto social sharing.</p>
+    </div>
+    <div class="section">
+      <h2>SKILLS & PROFICIENCY</h2>
+      <p>Content Writing</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+      <p>Video Editing</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+      <p>Affiliate Marketing</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+      <p>HTML & CSS</p>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
     </div>
   </div>
 </body>
